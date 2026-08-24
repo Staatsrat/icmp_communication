@@ -44,7 +44,7 @@ int main() {
     char wort[] = "Hotdog";
     for (int i = 0; wort[i] != '\0'; i++) {
 	sendit(wort[i]);
-	usleep(100000)
+	usleep(100000);
     }
     return 0;
 }
