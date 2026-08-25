@@ -77,7 +77,7 @@ staatsrat@server:~/icmp/server$
 ```
 
 ## ⚠️ Execution ##
-The server.sh file now can execute commands send to it via icmp using " `echo "$y" | bash`
+The server.sh file now can execute commands send to it via icmp using " `echo "$y" | bash`".
 Be careful with this function since everyone can send commands to the server and the communication is not encrypted or anything like that. (It is deactivated by default.) Also the program only listens for 5 seconds. Which can be changed by changing the 5 in the first command to whatever you wont.
 
 ## Things that dont work ## 
