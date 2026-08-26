@@ -81,7 +81,7 @@ The server.sh file now can execute commands send to it via icmp using " `echo "$
 Be careful with this function since everyone can send commands to the server and the communication is not encrypted or anything like that. (Execution is deactivated by default.) Also the program only listens for 5 seconds. Which can be changed by changing the 5 in the first command to whatever you wont.
 
 ## Things that dont work ## 
-Only one command at the time. No spaces can be send. The server backend only does anything after a given time otherwise the function wont work.And no encryption.
+The server backend only does anything after a given time otherwise the function wont work. And no encryption.
 
 I will also improve the client program.
 
