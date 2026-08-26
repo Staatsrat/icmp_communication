@@ -44,7 +44,7 @@ int main() {
     char wort[] = "Hotdog";
     for (int i = 0; wort[i] != '\0'; i++) {
 	sendit(wort[i]);
-	//usleep(100000); Dont use otherwise you will get a response which will mess up the server encoding. (will fix it)
+    usleep(100000);
     }
     return 0;
 }
