@@ -26,11 +26,19 @@ As soon as the pogramm start you will get a `Message: ` output. Here you have to
 Then on the receiving device:
 
 #### 1. Start scrit
-start the server.sh script. using `sudo ./server.sh`.
+start the server.sh script. using `chmod +x server.sh` and `sudo ./server.sh`.
 You need sudo so the pogramm can start the tcpdump.
 
 #### 2. Wait
-The pogramm will wait 5 seconds befor it ends. It then echos the send messages and or executes the messsage/command. 
+The pogramm will wait 5 seconds befor it ends. It then echos the send messages and or executes the messsage/command.
+An output can look like that.
+
+```text
+staatsrat@server:~/icmp/server$ ./server.sh
+Decimal:  72 111 116 100 111 103 72
+Hotdog
+staatsrat@server:~/icmp/server$
+```
 
 ### Read it manual
 
@@ -70,24 +78,6 @@ So if you see in the tcpdump for example:
 We see the lengths: 72 = H, 111 = o, 116 = t, 100 = d, 111 = o, 103 = g.
 
 This is how you can decode these messages.
-#### 5. Automation
-The server program is a simple Bash script.
-
-First, capture the tcpdump output into a file called `tcpdump.txt` using:
-`sudo tcpdump > tcpdump.txt`
-
-Then use the Bash script `server.sh` to decode the message. Before running it, make the file executable with `chmod +x server.sh`. 
-
-Run the script:
-`./server.sh`
-
-The result should look like this:
-```text
-staatsrat@server:~/icmp/server$ ./server.sh
-Decimal:  72 111 116 100 111 103 72
-HotdogH
-staatsrat@server:~/icmp/server$
-```
 
 ## ⚠️ Execution ##
 The server.sh file now can execute commands send to it via icmp using " `echo "$y" | bash`".
