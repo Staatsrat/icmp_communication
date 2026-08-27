@@ -25,6 +25,15 @@ As soon as the pogramm start you will get a `Message: ` output. Here you have to
 
 Then on the receiving device:
 
+#### 1. Start scrit
+start the server.sh script. using `sudo ./server.sh`.
+You need sudo so the pogramm can start the tcpdump.
+
+#### 2. Wait
+The pogramm will wait 5 seconds befor it ends. It then echos the send messages and or executes the messsage/command. 
+
+### Read it manual
+
 #### 1. Start tcpdump
 This is so you can see the incoming packets.
 
