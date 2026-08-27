@@ -16,6 +16,10 @@ Compilte the icmp.c pogramm usning gcc using `gcc -o icmp icmp.c`
 To start the pogramm you will need sudo since otherwise the pogramm cant use sockets.
 Use the command `sudo ./icmp`
 
+#### 3. Send
+
+As soon as the pogramm start you will get a `Message: ` output. Here you have to enter the message you wont to send. (I enterd a size of 200 bytes so the message cant be longer or you edit it in the code.) 
+
 
 ## Server
 
