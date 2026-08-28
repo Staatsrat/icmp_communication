@@ -10,7 +10,7 @@ match($0, /length ([0-9]+)/, a) {
             if (substr(m, length(m)-1) == "+x") {
                 msg_clean = substr(m, 1, length(m)-2);
                 #Command execution if +x Be aware!
-	            	#system(msg_clean);
+	            #system(msg_clean);
             }
             m = "";
         }
