@@ -82,6 +82,7 @@ This is how you can decode these messages.
 ## ⚠️ Execution ##
 The server.sh file now can execute commands send to it via icmp using " `echo "$y" | bash`".
 Be careful with this function since everyone can send commands to the server and the communication is not encrypted or anything like that. (Execution is deactivated by default.) Also the program only listens for 5 seconds. Which can be changed by changing the 5 in the first command to whatever you wont.
+Later ist should work by typing a +x at the end uf a message to indecate it should be executed.
 
 ## Things that dont work ## 
 The server backend only does anything after a given time otherwise the function wont work. And no encryption.
