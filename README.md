@@ -21,6 +21,10 @@ Use the command `sudo ./icmp`
 
 As soon as the program starts you will get a `Message: ` output. Here you have to enter the message you want to send. (I entered a size of 200 bytes so the message can't be longer or you edit it in the code.)
 
+### 4.Execute
+
+If you want to execute a message as a command, write `<command/message>+x` the "x" instructs the server program to execute the message in a shell. Note that anyone can send ICMP packets and execute commands if this function is enabled in the `server.sh` file.
+
 ## Server
 
 Then on the receiving device:
@@ -36,11 +40,11 @@ The program will wait 5 seconds before it ends. It then echos the sent messages 
 An output can look like this:
 
 ```text
-staatsrat@server:~/icmp/server$ ./server.sh
-Decimal:  72 111 116 100 111 103 72
-Hotdog
-staatsrat@server:~/icmp/server$
+staatsrat@server:~/icmp/server$ sudo ./serverv.sh
+Hi
+ls+x
 
+server.sh  serverv.sh
 ```
 
 ### Read it manually
@@ -88,15 +92,9 @@ We see the lengths: 72 = H, 111 = o, 116 = t, 100 = d, 111 = o, 103 = g.
 
 This is how you can decode these messages.
 
-## ⚠️ Execution
-
-The server.sh file can now execute commands sent to it via ICMP using `echo "$y" | bash`.
-Be careful with this function since everyone can send commands to the server and the communication is not encrypted or anything like that. (Execution is deactivated by default.) Also the program only listens for 5 seconds, which can be changed by changing the 5 in the first command to whatever you want.
-Later it should work by typing a `+x` at the end of a message to indicate it should be executed.
-
 ## Things that don't work
 
-The server backend only does anything after a given time; otherwise, the function won't work. And no encryption.
+no encryption.
 
 I will also improve the client program.
 
