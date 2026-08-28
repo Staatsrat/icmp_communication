@@ -19,7 +19,7 @@ int sendit(int letter) {
     int sock = socket(AF_INET, SOCK_RAW, IPPROTO_ICMP);
 
     struct sockaddr_in dest = { .sin_family = AF_INET };
-    inet_pton(AF_INET, "<serverip>", &dest.sin_addr);
+    inet_pton(AF_INET, "<Server_ip>", &dest.sin_addr);
 
     int target_size = letter;
 
@@ -28,7 +28,6 @@ int sendit(int letter) {
 
     struct icmphdr *icmp = (struct icmphdr *)packet;
     icmp->type = ICMP_ECHO;
-
 
     icmp->checksum = checksum(packet, target_size);
 
@@ -41,10 +40,19 @@ int sendit(int letter) {
 }
 
 int main() {
-    char wort[] = "<The message you wont to send.>";
-    for (int i = 0; wort[i] != '\0'; i++) {
-	sendit(wort[i]);
-    usleep(100000);
+    char wort[200] = "";
+    char end[] = "*";
+    printf("Message: ");
+    if (fgets(wort, sizeof(wort), stdin) != NULL) {
+	wort[strcspn(wort, "\n")] = '\0';
+	size_t free = sizeof(wort) - strlen(wort) -1;
+	strncat(wort, end, free);
+	for (int i = 0; wort[i] != '\0'; i++) {
+		sendit(wort[i]);
+        	usleep(100000);
+    	}
     }
+    main();
     return 0;
 }
+
