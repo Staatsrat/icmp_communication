@@ -95,7 +95,7 @@ We see the lengths: 72 = H, 111 = o, 116 = t, 100 = d, 111 = o, 103 = g.
 This is how you can decode these messages.
 
 ## Things that don't work
-no encryption.
+no encryption. Also there is no way to know what the output of your command was. It should be more of a shell.
 
 I will also improve the client program.
 Later I will make a YouTube video on this too.
