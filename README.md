@@ -97,5 +97,7 @@ This is how you can decode these messages.
 ## Things that don't work
 no encryption. Also there is no way to know what the output of your command was. It should be more of a shell.
 
+I will write that the user gets a response from the server.
+
 I will also improve the client program.
 Later I will make a YouTube video on this too.
