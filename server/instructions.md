@@ -15,3 +15,5 @@ Just open up to command lines on your pc. On one open the server.sh file. In the
  folder. Now the server should send you an echo.
 
  ## do not run just now I will improve it!
+
+If you won't just use sudo ./server.sh (from the server folder). with th send.c program in the samen folder.
