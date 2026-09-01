@@ -102,5 +102,4 @@ no encryption. Also there is no way to know what the output of your command was.
 
 I will write that the user gets a response from the server.
 
-I will also improve the client program.
 Later I will make a YouTube video on this too.
