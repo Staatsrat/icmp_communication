@@ -14,6 +14,6 @@ The script is not finished. Buffer overflows are possible iam working with null 
 Just open up to command lines on your pc. On one open the server.sh file. In the other the imp.c file. On the server place the send.c file and the server.sh file from the server
  folder. Now the server should send you an echo.
 
- ## do not run just now I will improve it!
+ ## Do not run just now I will improve it!
 
 If you won't just use sudo ./server.sh (from the server folder). with th send.c program in the samen folder.
