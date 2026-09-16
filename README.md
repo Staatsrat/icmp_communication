@@ -13,8 +13,8 @@ A C-based tool for covert data transmission over ICMP packet sizes without using
 
 #### Download
 ```
-git clone https://github.com/Staatsrat/icmp_c2.git
-cd icmp_c2
+git clone https://github.com/Staatsrat/icmp_communication.git
+cd icmp_communication
 ```
 
 #### 1. Compile
@@ -42,8 +42,8 @@ Then on the receiving device:
 
 #### Download
 ```
-git clone https://github.com/Staatsrat/icmp_c2.git
-cd icmp_c2
+git clone https://github.com/Staatsrat/icmp_communication.git
+cd icmp_communication
 ```
 
 #### 1. Start script
