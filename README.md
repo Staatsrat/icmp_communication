@@ -1,6 +1,4 @@
 # icmp-communication
----
-
 #### The tool is still work in progress
 
 A C-based tool for covert data transmission over ICMP packet sizes without using standard payload.
