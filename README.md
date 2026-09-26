@@ -1,6 +1,5 @@
 # icmp-communication
 ---
-![Demo](assets/demo.gif)
 
 #### The tool is still work in progress
 
