@@ -107,7 +107,7 @@ void banner(void) {
     printf(" ╚═╝ ╚═════╝╚═╝     ╚═╝╚═╝      ╚═════╝╚══════╝\n");
     printf("%s", X);
     printf("\n");
-    printf("                  ICMPC2\n");
+    printf("                  ICMP_communication\n");
     printf("\n");
 }
 
